@@ -378,7 +378,7 @@ export default function ViralHookAI() {
   const [copied, setCopied] = useState(null);
   const [genCount, setGenCount] = useState(0);
 
-  const showToast = (msg) => {
+const showToast = (msg: string) => {
     setToast(msg);
     setTimeout(() => setToast(null), 2500);
   };
